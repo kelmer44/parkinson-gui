@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApplication1.windows.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Menú principal ParkinsonRV" Height="456" Width="269" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowState="Normal" WindowStyle="SingleBorderWindow" Visibility="Visible" Icon="/Launcher;component/imagenes/Xparalaxe2.ico">
+    <Grid>
+        <StackPanel Margin="12" Name="stackPanel1" Orientation="Vertical" ClipToBounds="True" SnapsToDevicePixels="True">
+            <Label Height="Auto" Name="label1" Width="Auto" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Left" Grid.IsSharedSizeScope="False" ClipToBounds="True">Bienvenido a ParkinsonRV</Label>
+
+            <Border Height="Auto" Name="border1" Width="Auto" HorizontalAlignment="Center" BorderThickness="1" Padding="2" BorderBrush="Gray">
+                <TextBlock>
+                    <Hyperlink NavigateUri="http://bretemasoftware.com" TextDecorations="None" RequestNavigate="Hyperlink_RequestNavigate">
+                    <Image Source="imagenes/logoytexto.png" Height="150" Name="image1" Stretch="Uniform" Width="200" ToolTip="Paralaxe Multimedia" />
+                </Hyperlink>
+                </TextBlock>
+            </Border>
+            <Button Height="23" Name="botonExp1" Width="Auto" Margin="10" Click="BotonExp1Click" ToolTip="Carga el sistema de control de la experiencia 1." IsDefault="True">XP1: Finger-tapping</Button>
+            <Button Height="23" Name="botonExp2" Width="Auto" Margin="10" Click="BotonExp2Click" ToolTip="Carga el sistema de control de la experiencia 2.">XP2: Dianas</Button>
+            <Button Height="23" Name="botonExp3" Width="Auto" Margin="10" Click="BotonExp3Click" ToolTip="Carga el sistema de control de la experiencia 3.">XP3: Marcha</Button>
+            <Button Height="23" Name="exitButton" Width="75" Margin="20" Click="ExitButtonClick" ToolTip="Sale de la aplicación.">Salir</Button>
+        </StackPanel>
+    </Grid>
+</Window>

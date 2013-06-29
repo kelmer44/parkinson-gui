@@ -1,0 +1,225 @@
+﻿<Window x:Class="WpfApplication1.windows.XP2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:CustomControlLibrary="clr-namespace:CustomControlLibrary;assembly=CustomControlLibrary" Title="Experiencia 2" Height="1980" Width="Auto" SizeToContent="WidthAndHeight" ResizeMode="NoResize" Icon="/Launcher;component/windows/imagenes/Xp2.ico">
+    <StackPanel Margin="12" Name="stackPanel1" HorizontalAlignment="Stretch">
+
+        <Label Height="28" Name="label1" Width="Auto" HorizontalAlignment="Center">Bienvenido al sistema de gestión de la Experiencia 2.</Label>
+        <StackPanel Height="Auto" Name="stackPanelMainMenu" Width="Auto" HorizontalAlignment="Center"  Orientation="Horizontal" Margin="0,5,0,0">
+
+            <Border BorderThickness="0" BorderBrush="Gray" CornerRadius="2,2,2,2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <StackPanel Margin="0" Height="Auto" Name="stackPanel6" Width="Auto" VerticalAlignment="Center" HorizontalAlignment="Stretch" Orientation="Vertical">
+                        <Button ToolTip="Marca el inicio de la experiencia." Height="25" Width="Auto" HorizontalAlignment="Stretch" Padding="5,0" VerticalAlignment="Stretch" Margin="10,5" Name="btnStart" Click="BtnStartClick" HorizontalContentAlignment="Left">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                                <Image Height="20" Source="imagenes\811214142.png"></Image>
+                                <Label Padding="5,2">Iniciar</Label>
+                            </StackPanel>
+                        </Button>
+                        <Button ToolTip="Detiene temporalmente la ejecución de la experiencia hasta volver a pulsar &quot;Iniciar Experiencia&quot;." Height="25" Width="Auto" HorizontalAlignment="Stretch" Padding="5,0" VerticalAlignment="Stretch" Margin="10,5" Name="btnStop" Click="BtnStopClick" HorizontalContentAlignment="Left">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+                                <Image Height="20" Source="imagenes\control-pause-icon.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="UniformToFill" StretchDirection="Both"></Image>
+                                <Label Padding="5,2">Pausar</Label>
+                            </StackPanel>
+                        </Button>
+                        <Button ToolTip="Reinicia la secuencia de protocolos." Width="Auto" HorizontalAlignment="Stretch" Height="25" Padding="5,0" VerticalAlignment="Stretch" Margin="10,5" Name="btnReser" Click="BtnResetClick" HorizontalContentAlignment="Left">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                                <Image Height="20" Source="imagenes\POWER - RESTART.png"></Image>
+                                <Label Padding="5,2">Reiniciar</Label>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                    <!--<StackPanel Margin="0" Height="Auto" Name="stackPanel5" Width="Auto" VerticalAlignment="Top" HorizontalAlignment="Center">
+                        
+                        <Label Height="Auto" Name="label36" Width="Auto" FontWeight="Normal" HorizontalAlignment="Left" Margin="10,0">Orden de ejecución:</Label>
+                        <RadioButton Height="16" Name="rbRandom" Width="Auto" Margin="0,5" GroupName="sequenceOrder" HorizontalAlignment="Center" Checked="RbRandomChecked" ToolTip="Ejecuta los protocolos activos en un orden aleatorio.">Aleatorio</RadioButton>
+                        <RadioButton Height="16" IsChecked="True" Name="rbSecuencial" Width="Auto" Margin="5,5,0,10" GroupName="sequenceOrder" HorizontalAlignment="Center" Checked="RbSecuencialChecked" ToolTip="Ejecuta los protocolos activos según su índice de protocolo.">Secuencial</RadioButton>
+                    </StackPanel>-->
+
+                    <Border BorderThickness="1" BorderBrush="Gray" CornerRadius="2,2,2,2" HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="0,0,10,0">
+
+                        <StackPanel Margin="0" Height="Auto" Name="stackPanel7" Width="Auto" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                            <CheckBox Margin="10,5,10,0">Orden aleatorio</CheckBox>
+                            <Label Height="Auto" Name="label38" Width="Auto" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,5,10,0" Padding="2">Estado:</Label>
+                            <Label Height="Auto" Name="label41" Width="Auto" HorizontalAlignment="Center" Margin="0" Padding="2" ToolTip="Estado actual de ejecución de la experiencia.">En ejecución</Label>
+                            <Label Height="Auto" Name="label39" Width="Auto" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,0" Padding="2">Protocolo en ejecución:</Label>
+                            <Label Height="Auto" Name="label40" Width="Auto" HorizontalAlignment="Center" Margin="0,0,0,5" Padding="2" Content="1" ToolTip="Índice del protocolo que se está ejecutando actualmente."></Label>
+
+                        </StackPanel>
+                    </Border>
+                    <Border BorderThickness="1" BorderBrush="Gray" CornerRadius="2,2,2,2" HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="0,0,10,0">
+
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Margin="0">
+                            <Button Height="25" Name="BotonCargarProtocolo" Width="80" HorizontalAlignment="Center" Margin="10,10,10,5" ToolTip="Recupera los de configuración guardados, rechazando los cambios acuales." Click="BotonCargarProtocoloClick" HorizontalContentAlignment="Left">
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                                    <Image Height="20" Source="imagenes\48x48-open.png"></Image>
+                                    <Label Padding="5,2">Cargar</Label>
+                                </StackPanel>
+                            </Button>
+                            <Button Height="25" Name="botonGuardarProtocolo" Width="80" HorizontalAlignment="Center" Margin="10,5,10,5" Click="BotonGuardarProtocoloClick" ToolTip="Almacena la configuración actual para futuras sesiones." HorizontalContentAlignment="Left">
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                                    <Image Height="20" Source="imagenes\24_save.png"></Image>
+                                    <Label Padding="5,2">Guardar</Label>
+                                </StackPanel>
+                            </Button>
+                            <Label Name="archivo" FontWeight="Bold" Width="350"  Margin="10,5,10,10" ToolTip="Archivo en uso actualmente.">Ningún archivo cargado.</Label>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+        <Separator HorizontalAlignment="Stretch" Margin="10,10" ></Separator>
+        <StackPanel Height="Auto" Name="stackPanel4" Width="Auto" Orientation="Horizontal">
+            <WrapPanel Name="wpanel"  Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Center" ClipToBounds="False" Margin="10,0" Width="Auto">
+                <GroupBox Header="Configuración del protocolo" Height="Auto" Name="groupBox1" Width="Auto" HorizontalAlignment="Stretch">
+                    <StackPanel Height="Auto" Name="spDianasTracking" Width="Auto">
+                        <StackPanel Orientation="Horizontal" ToolTip="Protocolo seleccionado (para alteración de valores).">
+                            <Label Height="Auto" Name="label7" Width="Auto" FontWeight="Bold" HorizontalAlignment="Center" >Protocolo:</Label>
+                            <Label Height="Auto" Name="label6" Width="Auto" FontWeight="Bold" HorizontalAlignment="Center" Content="{Binding Path=IndiceVisual}"></Label>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch">
+                                <CheckBox IsChecked="{Binding Path=IsActive}" Height="16" Name="cbActive" Width="120" Margin="10,5" ToolTip="Activa/desactiva la ejecución de este protocolo.">Protocolo activo</CheckBox>
+                                <CheckBox IsChecked="{Binding Path=Invertir}" Height="16" Name="cbInvert" Width="120" Margin="10,5" ToolTip="Invierte el tracking o la animación activa.">Invertir lados</CheckBox>
+                                <CheckBox IsChecked="{Binding Path=EnNegro}" Height="16" Name="cbPantallaNegra" Width="120" Margin="5" ToolTip="El protocolo se ejecutará, pero se mostrará la pantalla en negro al usuario.">En negro</CheckBox>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                <Grid Height="Auto" Name="grid23" Width="Auto" Margin="5" HorizontalAlignment="Center" ToolTip="Tiempo en segundos para proceder al siguiente protocolo en la secuencia, en caso de hallarse activo el tracking">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <RadioButton Height="16" Grid.Column="1" Name="botonPriorizarTiempo" GroupName="priority" Margin="5" ToolTip="Tiempo en segundos para proceder al siguiente protocolo en la secuencia, en caso de hallarse activo el tracking." Checked="BotonPriorizarTiempoChecked">Tiempo siguiente protocolo (ms):</RadioButton>
+                                    <Viewbox Grid.Column="2" Margin="10,0,0,0" ToolTip="Tiempo en segundos para proceder al siguiente protocolo en la secuencia, en caso de hallarse activo el tracking">
+                                        <CustomControlLibrary:NumericUpDown x:Name="SecsNextProtocol" Value="{Binding Path=TimeNextProtocol, Mode=TwoWay}" Change="0.1" Maximum="60000.0" Minimum="0.0" DecimalPlaces="1" Margin="0" Height="30" />
+                                    </Viewbox>
+                                </Grid>
+
+                                <Grid Height="Auto" Name="grid24" Width="Auto" Margin="5" HorizontalAlignment="Center" ToolTip="Tiempo en segundos para proceder al siguiente protocolo en la secuencia, en caso de hallarse activo el tracking">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <RadioButton Height="16" Grid.Column="1" Name="botonPriorizarCiclos" Margin="5" GroupName="priority" ToolTip="Tiempo en segundos para proceder al siguiente protocolo en la secuencia, en caso de hallarse activo el tracking." IsChecked="True" Checked="BotonPriorizarCiclosChecked">Ciclos siguiente protocolo:</RadioButton>
+                                    <Viewbox Grid.Column="2" Margin="45,0,0,0" ToolTip="Tiempo en segundos para proceder al siguiente protocolo en la secuencia, en caso de hallarse activo el tracking">
+                                        <CustomControlLibrary:NumericUpDown x:Name="CyclesNextProtocol" Value="{Binding Path=CyclesNextProtocol, Mode=TwoWay}" Change="1" Maximum="100000" Minimum="5" DecimalPlaces="2" Margin="0" Height="30" />
+                                    </Viewbox>
+                                </Grid>
+                            </StackPanel>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <GroupBox Header="Dianas" Height="Auto" Name="gbDianas" Width="Auto" Margin="5" HorizontalAlignment="Center" VerticalAlignment="Top">
+                                
+                                
+                                <StackPanel Height="Auto" Name="spDianas" Width="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                    <Grid  Height="Auto" Name="grid1" Width="Auto" Margin="10,10" HorizontalAlignment="Stretch" ToolTip="Especifica el tiempo entre la aparición de una diana y otra.">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Name="label2" Grid.Column="1" VerticalAlignment="Center" Padding="0,5" ToolTip="Especifica el tiempo entre la aparición de una diana y otra.">Tiempo de repetición:</Label>
+                                        <TextBox Grid.Column="2" Margin="30,0,0,0" ToolTip="Especifica el tiempo entre la aparición de una diana y otra." Width="50" Text="{Binding Path=RepeatTime, Mode=TwoWay}"></TextBox>
+                                        <!--<Viewbox Grid.Column="2" Margin="72,0,0,0" ToolTip="Especifica el tiempo entre la aparición de una diana y otra.">
+                                <CustomControlLibrary:NumericUpDown x:Name="nudRepeatTime" Change="0.01" Maximum="600" Minimum="0.0" DecimalPlaces="2" Margin="0" Height="30" Value="{Binding Path=RepeatTime, Mode=TwoWay}"/>
+                            </Viewbox>
+                            -->
+                                    </Grid>
+                                    <RadioButton Height="16" Name="rbRandom" Width="Auto" Margin="10,10,10,5" HorizontalAlignment="Left" GroupName="targetState" ToolTip="Activa la iluminación de una u otra diana de forma aleatoria." Checked="RbRandomChecked" IsChecked="True">Iluminar aleatoriamente</RadioButton>
+                                    <RadioButton Height="16" Name="rbRightPanel" Width="Auto" Margin="10,5" HorizontalAlignment="Left" GroupName="targetState" ToolTip="Ilumina repetidamente la diana derecha." Checked="RbRightPanelChecked">Iluminar panel derecho</RadioButton>
+                                    <RadioButton Height="16" Name="rbLeftPanel" Width="Auto" Margin="10,5,10,10" HorizontalAlignment="Left" GroupName="targetState" ToolTip="Ilumina repetidamente la diana izquierda." Checked="RbLeftPanelChecked">Iluminar panel izquierdo</RadioButton>
+                                </StackPanel>
+                                
+                                
+                            </GroupBox>
+                            <GroupBox Header="Animaciones" Height="Auto" Name="gbAnims" Width="Auto" HorizontalAlignment="Center" Margin="5">
+                                <StackPanel Height="Auto" Name="spAnims" Width="Auto" HorizontalAlignment="Stretch">
+                                    <CheckBox IsChecked="{Binding Path=AutoAnim}" Height="16" Name="enableAnims" Width="Auto" HorizontalAlignment="Left" Margin="10" ToolTip="Activa el uso de animaciones, ignorando la información de captura.">Activar animaciones</CheckBox>
+                                    <Label Height="28" Name="labelCurrentAnimation" Width="Auto" HorizontalAlignment="Left" Margin="10,0" IsEnabled="{Binding ElementName=enableAnims, Path=IsChecked}">Animación activa:</Label>
+                                    <RadioButton Height="16" Name="animationRightStraight" Width="Auto" Margin="50,5" GroupName="currentAnimation" IsEnabled="{Binding ElementName=enableAnims, Path=IsChecked}" ToolTip="Activa el reaching del brazo derecho al frente." Checked="AnimationRightStraightChecked" IsChecked="True">Brazo derecho recto</RadioButton>
+                                    <RadioButton Height="16" Name="animationRightOblique" Width="Auto" Margin="50,5" GroupName="currentAnimation" IsEnabled="{Binding ElementName=enableAnims, Path=IsChecked}" ToolTip="Activa el reaching del brazo derecho al lado opuesto." Checked="AnimationRightObliqueChecked">Brazo derecho oblicuo</RadioButton>
+                                    <RadioButton Height="16" Name="animationLeftStraight" Width="Auto" Margin="50,5" GroupName="currentAnimation" IsEnabled="{Binding ElementName=enableAnims, Path=IsChecked}" ToolTip="Activa el reaching del brazo izquierdo al frente." Checked="AnimationLeftStraightChecked">Brazo izquierdo recto</RadioButton>
+                                    <RadioButton Height="16" Name="animationLeftOblique" Width="Auto" Margin="50,5,10,20" GroupName="currentAnimation" IsEnabled="{Binding ElementName=enableAnims, Path=IsChecked}" ToolTip="Activa el reaching del brazo izquierdo al lado opuesto." Checked="AnimationLeftObliqueChecked">Brazo izquierdo oblicuo</RadioButton>
+                                    <Grid  Height="Auto" Name="grid2" Width="Auto" Margin="10,0" HorizontalAlignment="Stretch" ToolTip="Determina la velocidad con la que se reproducen las animaciones.">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Name="label3" Grid.Column="1" VerticalAlignment="Center" Padding="0,5" ToolTip="Determina la velocidad con la que se reproducen las animaciones.">Velocidad de movimiento:</Label>
+                                        <!--<Viewbox Grid.Column="2" Margin="10,0,0,0" ToolTip="Determina la velocidad con la que se reproducen las animaciones.">
+                                <CustomControlLibrary:NumericUpDown x:Name="nudHandSpeed" Change="0.01" Maximum="600.0" Minimum="0.0" DecimalPlaces="2" Margin="0" Height="30" Value="{Binding Path=HandSpeed, Mode=TwoWay}" />
+                            </Viewbox>-->
+                                        <TextBox Grid.Column="2" Margin="30,0,0,0" ToolTip="Determina la velocidad con la que se reproducen las animaciones." Width="50" Text="{Binding Path=HandSpeed, Mode=TwoWay}"></TextBox>
+                                    </Grid>
+
+                                    <Grid  Height="Auto" Name="grid3" Width="Auto" Margin="10,0" HorizontalAlignment="Stretch" ToolTip="Retardo entre que aparece la diana y se dispara la animación.">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Name="label4" Grid.Column="1" VerticalAlignment="Center" Padding="0,5" ToolTip="Retardo entre que aparece la diana y se dispara la animación.">Retardo de disparo:</Label>
+                                        <!--<Viewbox Grid.Column="2" Margin="44,0,0,0" ToolTip="Retardo entre que aparece la diana y se dispara la animación.">
+                            <CustomControlLibrary:NumericUpDown x:Name="nudDelay" Change="0.01" Maximum="6000" Minimum="0.0" DecimalPlaces="2" Margin="0" Height="30" Value="{Binding Path=Delay, Mode=TwoWay}" />
+                        </Viewbox>-->
+                                        <TextBox Grid.Column="2" Margin="60,0,0,0" ToolTip="Retardo entre que aparece la diana y se dispara la animación." Width="50" Text="{Binding Path=Delay, Mode=TwoWay}"></TextBox>
+                                    </Grid>
+                                </StackPanel>
+                            </GroupBox>
+                        </StackPanel>
+
+                    </StackPanel>
+                </GroupBox>
+
+            </WrapPanel>
+            <StackPanel>
+                <Label Height="20" Name="labelProtocolos" Width="Auto" HorizontalContentAlignment="Left" Padding="0" Margin="10,0">Protocolos (click para editar):</Label>
+                <TreeView SelectedItemChanged="TvProtocolosSelectedItemChanged" Margin="10,5" Name="tvProtocolos" HorizontalAlignment="Stretch" VerticalAlignment="Top" Width="200" Height="292" MinWidth="0" ToolTip="Haga clic en un protocolo para alterar sus parámetros. Pulse actualizar para reflejar los cambios en el árbol.">
+                    <TreeView.ItemContainerStyle>
+                        <Style TargetType="TreeViewItem">
+                            <Setter Property="IsEnabled" Value="{Binding Path=Activo}"/>
+                            <Setter Property="IsExpanded" Value="False"/>
+                        </Style>
+                    </TreeView.ItemContainerStyle>
+                    <TreeView.ItemTemplate>
+                        <HierarchicalDataTemplate ItemsSource="{Binding Path=Children}">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="imagenes\file_icon.gif" Margin="0,0,5,0" />
+                                <TextBlock Text="{Binding Path=Name}" ></TextBlock>
+                            </StackPanel>
+                        </HierarchicalDataTemplate>
+                    </TreeView.ItemTemplate>
+
+                </TreeView>
+                <Button Name="button1" Width="Auto" HorizontalAlignment="Center" Click="BotonRefresh" ToolTip="Actualiza la información reflejada en el árbol.">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                        <Image Height="15" Source="imagenes\refresh-icon.png"></Image>
+                        <Label Padding="5,2">Actualizar</Label>
+                    </StackPanel>
+                </Button>
+
+                <StackPanel Margin="10" Orientation="Vertical" Height="Auto" Name="stackPanel2" Width="Auto" HorizontalAlignment="Center">
+                    <Button Width="120" Margin="10,5" ToolTip="Activa todos los protocolos." Name="activateAll" Click="ActivateAllClick" HorizontalAlignment="Left">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+                            <Image Height="15" Source="imagenes\icon_check_mark.gif" HorizontalAlignment="Left"></Image>
+                            <Label Padding="5,2" HorizontalAlignment="Left">Activar todos</Label>
+                        </StackPanel>
+                    </Button>
+                    <Button Width="120" Margin="10,5" ToolTip="Desactiva todos los protocolos." VerticalAlignment="Top" Name="deactitateAll" Click="DeactitateAllClick">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                            <Image Height="15" Source="imagenes\150.png"></Image>
+                            <Label Padding="5,2">Desactivar todos</Label>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+        <Button Height="23" Name="button2" Width="75" HorizontalAlignment="Right" Margin="10" Click="Button2Click">Salir</Button>
+        <!-- <TextBox Height="Auto" Name="dbgBox" Width="Auto" /> -->
+    </StackPanel>
+</Window>

@@ -1,0 +1,14 @@
+E:\Parkinson\LauncherWPF\WpfApplication1\WpfApplication1\bin\Release\WpfApplication1.exe
+E:\Parkinson\LauncherWPF\WpfApplication1\WpfApplication1\bin\Release\WpfApplication1.pdb
+E:\Parkinson\LauncherWPF\WpfApplication1\WpfApplication1\obj\Release\ResolveAssemblyReference.cache
+E:\Parkinson\LauncherWPF\WpfApplication1\WpfApplication1\obj\Release\Window1.baml
+E:\Parkinson\LauncherWPF\WpfApplication1\WpfApplication1\obj\Release\Window1.g.cs
+E:\Parkinson\LauncherWPF\WpfApplication1\WpfApplication1\obj\Release\App.g.cs
+E:\Parkinson\LauncherWPF\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1_MarkupCompile.cache
+E:\Parkinson\LauncherWPF\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.g.resources
+E:\Parkinson\LauncherWPF\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.Properties.Resources.resources
+E:\Parkinson\LauncherWPF\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.csproj.GenerateResource.Cache
+E:\Parkinson\LauncherWPF\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.exe
+E:\Parkinson\LauncherWPF\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.pdb
+E:\Parkinson\LauncherWPF\WpfApplication1\WpfApplication1\obj\Release\Experiencia1.baml
+E:\Parkinson\LauncherWPF\WpfApplication1\WpfApplication1\obj\Release\Experiencia1.g.cs

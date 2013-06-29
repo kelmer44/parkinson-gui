@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApplication1.windows.BaseWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:expControl="clr-namespace:ExperienceMainControls;assembly=ExperienceMainControls"
+    xmlns:CustomControlLibrary="clr-namespace:CustomControlLibrary;assembly=CustomControlLibrary"
+    Title="BaseWindow" Height="800" Width="Auto">
+    <StackPanel Name="mainPanel">
+        <expControl:MainControls Name="flowControls"/>
+        <StackPanel Orientation="Horizontal" Name="xpControlsPanel">
+            <WrapPanel Name="wpanel"  Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Center" ClipToBounds="False" Margin="10,0" Width="Auto">
+                <GroupBox Header="Configuración del protocolo" Height="Auto" Name="groupBox1" Width="Auto" HorizontalAlignment="Stretch">
+                    <StackPanel Name="protocolBodyPanel">
+                        <StackPanel Name="panelProtocolTitle" Orientation="Horizontal" ToolTip="Protocolo seleccionado (para alteración de valores).">
+                            <Label Height="Auto" Name="labelProtocolLabel" Width="Auto" FontWeight="Bold" HorizontalAlignment="Center" >Protocolo:</Label>
+                            <Label Height="Auto" Name="labelProtocolNumber" Width="Auto" FontWeight="Bold" HorizontalAlignment="Center" Content="{Binding Path=IndiceVisual}"></Label>
+                        </StackPanel>
+                        <expControl:PerProtocolControls />
+                        <Separator Name="protocolSpecificSeparator"></Separator>
+                        <Label>Pues aquí iría lo específico y tal</Label>
+                    </StackPanel>
+                </GroupBox>
+            </WrapPanel>
+            <expControl:TreeViewControl Name="protocolList" />
+        </StackPanel>
+    </StackPanel>
+</Window>

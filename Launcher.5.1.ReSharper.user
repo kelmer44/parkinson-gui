@@ -1,0 +1,908 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">True</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/d:Exp3/f:PuertaExp3.cs" caret="284" fromTop="8" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:XP3.xaml.cs" caret="856" fromTop="11" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/d:Exp3/f:Experiencia3.cs" caret="966" fromTop="27" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/d:Exp3/f:GrupoPuerta.cs" caret="4146" fromTop="8" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/f:SocketManager.cs" caret="178" fromTop="8" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Properties/f:AssemblyInfo.cs" caret="24" fromTop="0" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:Composite.cs" caret="94" fromTop="4" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/f:App.xaml.cs" caret="159" fromTop="8" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/f:App.xaml" caret="302" fromTop="8" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:XP1.xaml" caret="0" fromTop="0" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:BaseWindow.xaml" caret="1486" fromTop="15" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:BaseWindow.xaml.cs" caret="226" fromTop="9" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:XP2.xaml.cs" caret="1084" fromTop="15" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:NewXP1.xaml.cs" caret="20869" fromTop="378" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:NewXP1.xaml" caret="8175" fromTop="21" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/d:Exp2/f:Experiencia2.cs" caret="221" fromTop="8" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/d:Exp1/f:Experiencia1.cs" caret="2028" fromTop="8" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:MainMenu.xaml" caret="0" fromTop="0" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:MainMenu.xaml.cs" caret="1111" fromTop="44" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/f:Experiencia.cs" caret="1682" fromTop="13" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/d:Exp2/f:ProtocoloExp2.cs" caret="6296" fromTop="13" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/d:Exp1/f:ProtocoloExp1.cs" caret="0" fromTop="0" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/f:Serializer.cs" caret="2788" fromTop="27" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:XP1.xaml.cs" caret="0" fromTop="0" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:XP2.xaml" caret="1" fromTop="0" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:XP3.xaml" caret="0" fromTop="0" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/f:TcpSocketManager.cs" caret="135" fromTop="5" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:NewXP2.xaml.cs" caret="1482" fromTop="23" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:NewXP2.xaml" caret="1" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/d:Exp2/f:Experiencia2.cs" caret="4718" fromTop="22" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/d:Exp1/f:Experiencia1.cs" caret="5037" fromTop="30" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/d:Exp2/f:Experiencia2.cs" caret="4718" fromTop="0" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/d:Exp2/f:Experiencia2.cs" caret="4718" fromTop="8" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/d:Exp1/f:Experiencia1.cs" caret="5037" fromTop="7" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/d:Exp1/f:Experiencia1.cs" caret="5037" fromTop="1" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/d:Exp1/f:Experiencia1.cs" caret="2028" fromTop="8" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/d:Exp2/f:Experiencia2.cs" caret="4718" fromTop="12" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/d:Exp2/f:Experiencia2.cs" caret="221" fromTop="8" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/f:Experiencia.cs" caret="199" fromTop="8" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/f:Experiencia.cs" caret="3433" fromTop="22" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/f:Experiencia.cs" caret="3063" fromTop="7" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/f:Experiencia.cs" caret="543" fromTop="8" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/f:Experiencia.cs" caret="1527" fromTop="27" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/f:Experiencia.cs" caret="1527" fromTop="28" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/f:Experiencia.cs" caret="1470" fromTop="29" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/f:Experiencia.cs" caret="1433" fromTop="33" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/f:Experiencia.cs" caret="1162" fromTop="30" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:Experiencias/f:Experiencia.cs" caret="1125" fromTop="28" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:MainMenu.xaml" caret="1122" fromTop="10" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:MainMenu.xaml.cs" caret="1611" fromTop="19" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:MainMenu.xaml.cs" caret="1398" fromTop="15" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:NewXP2.xaml" caret="683" fromTop="0" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:NewXP2.xaml" caret="2806" fromTop="9" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:NewXP2.xaml.cs" caret="24989" fromTop="17" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:NewXP2.xaml.cs" caret="1481" fromTop="23" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:NewXP2.xaml" caret="7686" fromTop="6" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:NewXP2.xaml" caret="9468" fromTop="8" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:NewXP2.xaml" caret="14676" fromTop="5" />
+      <File id="0A8B1A5D-3FAF-44FF-8492-59B115EA9331/d:windows/f:NewXP2.xaml" caret="16294" fromTop="8" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TextBox">
+      <Item value="Text" priority="2" />
+      <Item value="IsEnabled" priority="0" />
+      <Item value="Visibility" priority="0" />
+      <Item value="Width" priority="0" />
+      <Item value="InvalidateVisual`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="private" priority="52" />
+      <Item value="int" priority="54" />
+      <Item value="float" priority="27" />
+      <Item value="new" priority="50" />
+      <Item value="btnIniciarExperiencia4" priority="0" />
+      <Item value="for" priority="11" />
+      <Item value="i" priority="56" />
+      <Item value="_buffer" priority="2" />
+      <Item value="class" priority="3" />
+      <Item value="bool" priority="26" />
+      <Item value="Enum`0" priority="1" />
+      <Item value="CameraType`0" priority="2" />
+      <Item value="struct" priority="1" />
+      <Item value="VectorConverter`0" priority="0" />
+      <Item value="Array`0" priority="0" />
+      <Item value="public" priority="60" />
+      <Item value="return" priority="11" />
+      <Item value="_estadoPuerta" priority="3" />
+      <Item value="void" priority="8" />
+      <Item value="b" priority="3" />
+      <Item value="Experiencia3`0" priority="1" />
+      <Item value="_exp3Class" priority="37" />
+      <Item value="Experiencia3" priority="1" />
+      <Item value="cbAutoAnim" priority="0" />
+      <Item value="this" priority="37" />
+      <Item value="TwoWay" priority="1" />
+      <Item value="OneWayToSource" priority="0" />
+      <Item value="DoorState`0" priority="4" />
+      <Item value="string" priority="8" />
+      <Item value="IsChecked" priority="1" />
+      <Item value="_botonCerrada" priority="1" />
+      <Item value="BindingMode`0" priority="3" />
+      <Item value="Primera" priority="1" />
+      <Item value="if" priority="36" />
+      <Item value="else" priority="13" />
+      <Item value="buffer" priority="4" />
+      <Item value="EnumBooleanConverter`0" priority="2" />
+      <Item value="EnumBooleanConverter" priority="1" />
+      <Item value="puertaString" priority="3" />
+      <Item value="RadioButton`0" priority="2" />
+      <Item value="b2" priority="0" />
+      <Item value="RoutedEventHandler" priority="0" />
+      <Item value="HasContentProperty" priority="0" />
+      <Item value="sender" priority="2" />
+      <Item value="MessageBox`0" priority="9" />
+      <Item value="number" priority="1" />
+      <Item value="numPuerta" priority="4" />
+      <Item value="Cerrada" priority="0" />
+      <Item value="Checked" priority="0" />
+      <Item value="true" priority="6" />
+      <Item value="sizeof" priority="8" />
+      <Item value="byte" priority="8" />
+      <Item value="Serializable" priority="4" />
+      <Item value="ContextStaticAttribute`0" priority="0" />
+      <Item value="Pack`0" priority="0" />
+      <Item value="pack" priority="0" />
+      <Item value="virtual" priority="0" />
+      <Item value="Experiencia`0" priority="6" />
+      <Item value="protected" priority="1" />
+      <Item value="Puerto" priority="2" />
+      <Item value="false" priority="12" />
+      <Item value="FBuffer" priority="14" />
+      <Item value="Concat`1" priority="1" />
+      <Item value="buff" priority="6" />
+      <Item value="BitConverter`0" priority="0" />
+      <Item value="BlockCopy" priority="0" />
+      <Item value="aux" priority="0" />
+      <Item value="Invertir" priority="1" />
+      <Item value="AutoAnim" priority="1" />
+      <Item value="_exp2Class" priority="18" />
+      <Item value="RepeatTime" priority="0" />
+      <Item value="HandSpeed" priority="0" />
+      <Item value="Delay" priority="0" />
+      <Item value="ActiveAnim" priority="1" />
+      <Item value="IllumOptions`0" priority="3" />
+      <Item value="Random" priority="3" />
+      <Item value="DerechoRecto" priority="0" />
+      <Item value="StackPanel`0" priority="2" />
+      <Item value="Image`0" priority="0" />
+      <Item value="Experiencia1`0" priority="4" />
+      <Item value="Started" priority="0" />
+      <Item value="SoundFrequency" priority="0" />
+      <Item value="ActiveFrequency" priority="1" />
+      <Item value="ActivateAnimation" priority="0" />
+      <Item value="SoundSync" priority="0" />
+      <Item value="AnimationBlending" priority="0" />
+      <Item value="PassiveFrequency" priority="0" />
+      <Item value="_exp1Class" priority="39" />
+      <Item value="ProtocoloExp1`0" priority="15" />
+      <Item value="using" priority="2" />
+      <Item value="System" priority="2" />
+      <Item value="Collections" priority="1" />
+      <Item value="ArrayList`0" priority="0" />
+      <Item value="ProtocoloExp1" priority="1" />
+      <Item value="_protocolos" priority="15" />
+      <Item value="protocolo" priority="4" />
+      <Item value="in" priority="0" />
+      <Item value="p" priority="11" />
+      <Item value="indiceProtocolo" priority="0" />
+      <Item value="idx" priority="9" />
+      <Item value="tvProtocolos" priority="11" />
+      <Item value="TreeViewItem`0" priority="9" />
+      <Item value="newChild" priority="2" />
+      <Item value="FontWeight" priority="1" />
+      <Item value="FontWeight`0" priority="0" />
+      <Item value="mainNode" priority="0" />
+      <Item value="var" priority="1" />
+      <Item value="childInvert" priority="2" />
+      <Item value="tvi" priority="2" />
+      <Item value="tiempo" priority="0" />
+      <Item value="HierarchicalDataTemplate`0" priority="0" />
+      <Item value="ListBox`0" priority="1" />
+      <Item value="Composite`0" priority="6" />
+      <Item value="List" priority="3" />
+      <Item value="GetData`0" priority="1" />
+      <Item value="List&lt;ProtocoloExp1&gt;" priority="0" />
+      <Item value="Composite" priority="1" />
+      <Item value="Name" priority="2" />
+      <Item value="False" priority="0" />
+      <Item value="Random`0" priority="2" />
+      <Item value="rbSecuencial" priority="1" />
+      <Item value="TreeViewItemSelected`0" priority="0" />
+      <Item value="readonly" priority="10" />
+      <Item value="indexProtocol" priority="0" />
+      <Item value="Length" priority="0" />
+      <Item value="t" priority="2" />
+      <Item value="null" priority="8" />
+      <Item value="Grid`0" priority="1" />
+      <Item value="as" priority="2" />
+      <Item value="Border`0" priority="3" />
+      <Item value="VisualTreeHelper`0" priority="1" />
+      <Item value="ScrollViewer`0" priority="1" />
+      <Item value="FindCommonVisualAncestor`0" priority="0" />
+      <Item value="Visual`0" priority="0" />
+      <Item value="s" priority="0" />
+      <Item value="foreach" priority="0" />
+      <Item value="element" priority="1" />
+      <Item value="internal" priority="1" />
+      <Item value="Indice" priority="0" />
+      <Item value="Horizontal" priority="1" />
+      <Item value="SetSelectedItem`0" priority="0" />
+      <Item value="g" priority="0" />
+      <Item value="IPEndPoint`0" priority="1" />
+      <Item value="IPEndPoint" priority="0" />
+      <Item value="IPAddress`0" priority="3" />
+      <Item value="Socket`0" priority="1" />
+      <Item value="Socket" priority="0" />
+      <Item value="AddressFamily`0" priority="0" />
+      <Item value="Stream" priority="0" />
+      <Item value="IP" priority="0" />
+      <Item value="sock" priority="2" />
+      <Item value="response" priority="0" />
+      <Item value="bytesRec" priority="0" />
+      <Item value="UdpClient`0" priority="1" />
+      <Item value="u" priority="0" />
+      <Item value="UdpState`0" priority="0" />
+      <Item value="UdpState" priority="1" />
+      <Item value="E" priority="10" />
+      <Item value="U" priority="13" />
+      <Item value="UdpClient" priority="0" />
+      <Item value="S" priority="4" />
+      <Item value="MessageReceived" priority="1" />
+      <Item value="DecoderFallbackException`0" priority="0" />
+      <Item value="receiveBytes" priority="1" />
+      <Item value="numero" priority="1" />
+      <Item value="CurrentProtocol" priority="0" />
+      <Item value="wpanel" priority="2" />
+      <Item value="Console`0" priority="0" />
+      <Item value="Label`0" priority="1" />
+      <Item value="label40" priority="0" />
+      <Item value="enum" priority="0" />
+      <Item value="Estados`0" priority="1" />
+      <Item value="CyclesBetweenPulses" priority="0" />
+      <Item value="indice" priority="3" />
+      <Item value="switch" priority="0" />
+      <Item value="case" priority="1" />
+      <Item value="Color`0" priority="1" />
+      <Item value="break" priority="2" />
+      <Item value="label41" priority="3" />
+      <Item value="Colors`0" priority="1" />
+      <Item value="info" priority="8" />
+      <Item value="IServiceProvider`0" priority="0" />
+      <Item value="TimeSpan`0" priority="0" />
+      <Item value="typeof" priority="4" />
+      <Item value="Serializer`0" priority="1" />
+      <Item value="Serializer" priority="1" />
+      <Item value="fileSaver" priority="1" />
+      <Item value="try" priority="3" />
+      <Item value="e" priority="4" />
+      <Item value="recibe" priority="1" />
+      <Item value="ex" priority="0" />
+      <Item value="catch" priority="3" />
+      <Item value="Exception`0" priority="3" />
+      <Item value="exc" priority="0" />
+      <Item value="receivedBytes" priority="2" />
+      <Item value="ResetSignal" priority="2" />
+      <Item value="reset" priority="2" />
+      <Item value="Boolean`0" priority="0" />
+      <Item value="saveFileDialog" priority="0" />
+      <Item value="SaveFileDialog" priority="0" />
+      <Item value="SocketManager`0" priority="6" />
+      <Item value="static" priority="4" />
+      <Item value="getInstance`0" priority="0" />
+      <Item value="instance" priority="2" />
+      <Item value="SocketManager" priority="0" />
+      <Item value="object" priority="1" />
+      <Item value="lock" priority="0" />
+      <Item value="a" priority="0" />
+      <Item value="sm" priority="1" />
+      <Item value="recibidos" priority="0" />
+      <Item value="Viewbox`0" priority="0" />
+      <Item value="_viewBox" priority="0" />
+      <Item value="Viewbox" priority="0" />
+      <Item value="CustomControlLibrary" priority="1" />
+      <Item value="ua" priority="0" />
+      <Item value="Margin" priority="1" />
+      <Item value="Thickness" priority="3" />
+      <Item value="VerticalAlignment`0" priority="6" />
+      <Item value="Padding" priority="2" />
+      <Item value="Thickness`0" priority="0" />
+      <Item value="ToolTip`0" priority="1" />
+      <Item value="VerticalAlignment" priority="1" />
+      <Item value="Label" priority="1" />
+      <Item value="Content" priority="0" />
+      <Item value="NumericUpDown`0" priority="5" />
+      <Item value="NumericUpDown" priority="3" />
+      <Item value="Change" priority="0" />
+      <Item value="wrapPanel1" priority="0" />
+      <Item value="numericUpDown" priority="3" />
+      <Item value="XamlGeneratedNamespace" priority="0" />
+      <Item value="decimal" priority="0" />
+      <Item value="Height" priority="0" />
+      <Item value="botonPriorizarTiempo" priority="0" />
+      <Item value="_gpuertas" priority="5" />
+      <Item value="_labelNud" priority="1" />
+      <Item value="NewsStyleUriParser`0" priority="0" />
+      <Item value="value" priority="1" />
+      <Item value="_maxPuerta" priority="1" />
+      <Item value="_tamanoPuerta" priority="1" />
+      <Item value="_minPuerta" priority="0" />
+      <Item value="PuertaExp3`0" priority="6" />
+      <Item value="GetPuerta`0" priority="1" />
+      <Item value="EstadoPuerta" priority="0" />
+      <Item value="_puertas" priority="3" />
+      <Item value="PuertaExp3" priority="0" />
+      <Item value="TamanoPuerta" priority="0" />
+      <Item value="BindingGroupProperty" priority="2" />
+      <Item value="Binding" priority="2" />
+      <Item value="SourceChangedEventArgs`0" priority="0" />
+      <Item value="Source" priority="0" />
+      <Item value="Path" priority="0" />
+      <Item value="Mode" priority="0" />
+      <Item value="PropertyPath" priority="0" />
+      <Item value="Binding`0" priority="3" />
+      <Item value="_nudBinding" priority="0" />
+      <Item value="PropertyChanged" priority="0" />
+      <Item value="nud" priority="3" />
+      <Item value="nB" priority="0" />
+      <Item value="AnimSpeed" priority="0" />
+      <Item value="Close`0" priority="1" />
+      <Item value="TipoCamara" priority="1" />
+      <Item value="Type`0" priority="0" />
+      <Item value="rbThirdPerson" priority="1" />
+      <Item value="rbFirstPerson" priority="0" />
+      <Item value="Puertas" priority="0" />
+      <Item value="Flags" priority="0" />
+      <Item value="Properties" priority="0" />
+      <Item value="TcpSocketManager`0" priority="0" />
+      <Item value="const" priority="2" />
+      <Item value="_socket" priority="2" />
+      <Item value="HttpListener`0" priority="1" />
+      <Item value="udpClient" priority="3" />
+      <Item value="DateTime`0" priority="0" />
+      <Item value="labelCiclosEntrePulso" priority="0" />
+      <Item value="imagenes" priority="4" />
+      <Item value=".." priority="0" />
+      <Item value="811214142.png" priority="2" />
+      <Item value="Pause.ico" priority="1" />
+      <Item value="icon-pause.png" priority="2" />
+      <Item value="control-pause-icon.png" priority="0" />
+      <Item value="quick_restart.png" priority="0" />
+      <Item value="POWER - RESTART.png" priority="0" />
+      <Item value="24_save.png" priority="0" />
+      <Item value="AppDomainSetup`0" priority="2" />
+      <Item value="NumberOfProtocols" priority="6" />
+      <Item value="nProtocolos" priority="3" />
+      <Item value="file_icon.gif" priority="0" />
+      <Item value="nguid" priority="0" />
+      <Item value="page_copy.png" priority="1" />
+      <Item value="icon_check_mark.gif" priority="0" />
+      <Item value="150.png" priority="0" />
+      <Item value="refresh-icon.png" priority="0" />
+      <Item value="Protocolos" priority="5" />
+      <Item value="idxVisual" priority="0" />
+      <Item value="RefreshTree`0" priority="0" />
+      <Item value="filename" priority="0" />
+      <Item value="port" priority="0" />
+      <Item value="base" priority="8" />
+      <Item value="puerto" priority="1" />
+      <Item value="_dispatcherTimer" priority="0" />
+      <Item value="EnNegro" priority="1" />
+      <Item value="mainPanel" priority="1" />
+      <Item value="dbgBox" priority="0" />
+      <Item value="ProtocoloExp2`0" priority="2" />
+      <Item value="AnimOptions`0" priority="2" />
+      <Item value="ValsPerProtocol" priority="1" />
+      <Item value="List&lt;ProtocoloExp2&gt;" priority="0" />
+      <Item value="ProtocoloExp2" priority="0" />
+      <Item value="LineStackingStrategy`0" priority="0" />
+      <Item value="_listaData" priority="1" />
+      <Item value="stackPanel4" priority="0" />
+      <Item value="_sm" priority="1" />
+      <Item value="BotonPriorizarCiclosChecked`0" priority="0" />
+      <Item value="rbRandom" priority="1" />
+      <Item value="rbRightPanel" priority="1" />
+      <Item value="rbLeftPanel" priority="0" />
+      <Item value="TreeViewControl`0" priority="0" />
+      <Item value="lista" priority="1" />
+      <Item value="flowControls" priority="2" />
+      <Item value="xpControlsPanel" priority="0" />
+      <Item value="ActiveIllum" priority="0" />
+      <Item value="CiclosEntrePulso" priority="0" />
+      <Item value="CyclesNextProtocol" priority="0" />
+      <Item value="TimeNextProtocol" priority="0" />
+      <Item value="PrioridadCiclos" priority="0" />
+      <Item value="TimeToShowTarget" priority="0" />
+      <Item value="TimeToStartAnimation" priority="1" />
+      <Item value="TimeToEndAnimation" priority="0" />
+      <Item value="ExtraWaitingTime" priority="0" />
+      <Item value="List&lt;Composite&gt;" priority="0" />
+      <Item value="RbRandomChecked`0" priority="0" />
+      <Item value="animationRightOblique" priority="0" />
+      <Item value="animationRightStraight" priority="0" />
+      <Item value="animationLeftStraight" priority="0" />
+      <Item value="animationLeftOblique" priority="0" />
+      <Item value="_udpClient" priority="0" />
+      <Item value="errcode" priority="0" />
+      <Item value="Hidden" priority="0" />
+      <Item value="ComponentModel" priority="0" />
+      <Item value="IDataErrorInfo`0" priority="0" />
+      <Item value="columnName" priority="3" />
+      <Item value="result" priority="7" />
+      <Item value="copyFromCombo" priority="2" />
+      <Item value="String`0" priority="0" />
+      <Item value="ComboBox`0" priority="0" />
+      <Item value="_tvProtocolos" priority="0" />
+      <Item value="InvalidateMeasure`0" priority="0" />
+      <Item value="ISupportInitializeNotification`0" priority="0" />
+      <Item value="NotifyPropertyChanged`0" priority="0" />
+      <Item value="None" priority="0" />
+      <Item value="Uniform" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Grid">
+      <Item value="IsEnabled" priority="0" />
+      <Item value="SetColumn`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.Experiencia3">
+      <Item value="AutoAnim" priority="2" />
+      <Item value="AnimSpeed" priority="2" />
+      <Item value="ArmSpread" priority="3" />
+      <Item value="DoorSize" priority="4" />
+      <Item value="Started" priority="4" />
+      <Item value="TipoCamara" priority="3" />
+      <Item value="SetEstadoPuerta`0" priority="1" />
+      <Item value="GetEstadoPuerta`0" priority="2" />
+      <Item value="EstadoPuerta" priority="0" />
+      <Item value="EnviaDatos`0" priority="0" />
+      <Item value="buffer" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.CheckBox">
+      <Item value="ActualHeight" priority="0" />
+      <Item value="LassoSelectionChangedEventHandler`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.XP3">
+      <Item value="DataContext" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Data.Binding">
+      <Item value="Mode" priority="4" />
+      <Item value="Converter" priority="2" />
+      <Item value="ConverterParameter" priority="1" />
+      <Item value="Path" priority="5" />
+      <Item value="Source" priority="3" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="NotifyOnValidationError" priority="0" />
+      <Item value="UpdateSourceTrigger" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.RadioButton">
+      <Item value="SetBinding`0" priority="1" />
+      <Item value="IsChecked" priority="9" />
+      <Item value="Checked" priority="3" />
+      <Item value="Name" priority="0" />
+      <Item value="HorizontalContentAlignment" priority="0" />
+      <Item value="HorizontalAlignment" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Data.BindingMode">
+      <Item value="TwoWay" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@WpfApplication1.Experiencia3">
+      <Item value="DoorState`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@WpfApplication1.Experiencia3+DoorState">
+      <Item value="Cerrada" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Controls.RadioButton">
+      <Item value="IsCheckedProperty" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.GrupoPuerta">
+      <Item value="BotonAbierta" priority="2" />
+      <Item value="NumericUpDown" priority="2" />
+      <Item value="StackPanel1" priority="0" />
+      <Item value="LabelNud" priority="0" />
+      <Item value="NudBinding" priority="1" />
+      <Item value="BotonAuto" priority="0" />
+      <Item value="AbiertaBinding" priority="0" />
+      <Item value="CerradaBinding" priority="0" />
+      <Item value="AutoBinding" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.Experiencia3+DoorState">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Contains`0" priority="0" />
+      <Item value="Trim`0" priority="0" />
+      <Item value="Substring`0" priority="1" />
+      <Item value="Length" priority="0" />
+      <Item value="LastIndexOf`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.MessageBox">
+      <Item value="Show`0" priority="12" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@WpfApplication1.Experiencia3+CameraType">
+      <Item value="Tercera" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.BitConverter">
+      <Item value="GetBytes`0" priority="0" />
+      <Item value="ToSingle`0" priority="1" />
+      <Item value="ToInt32`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Buffer">
+      <Item value="BlockCopy`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.Experiencias.Experiencia2">
+      <Item value="Invertir" priority="0" />
+      <Item value="AutoAnim" priority="0" />
+      <Item value="ActiveAnim" priority="3" />
+      <Item value="Delay" priority="0" />
+      <Item value="RepeatTime" priority="1" />
+      <Item value="HandSpeed" priority="1" />
+      <Item value="Started" priority="0" />
+      <Item value="ActiveIllum" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@WpfApplication1.Experiencias.Experiencia2+AnimOptions">
+      <Item value="DerechoRecto" priority="0" />
+      <Item value="DerechoOblicuo" priority="0" />
+      <Item value="IzquierdoRecto" priority="0" />
+      <Item value="IzquierdoOblicuo" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@WpfApplication1.Experiencias.Experiencia2+IllumOptions">
+      <Item value="LeftPanel" priority="0" />
+      <Item value="RightPanel" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.StackPanel">
+      <Item value="HorizontalAlignment" priority="1" />
+      <Item value="DataContext" priority="2" />
+      <Item value="Children" priority="2" />
+      <Item value="Orientation" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.Experiencias.Experiencia1">
+      <Item value="ActivateAnimation" priority="1" />
+      <Item value="ActivateSound" priority="1" />
+      <Item value="ActiveFrequency" priority="1" />
+      <Item value="AnimationBlending" priority="1" />
+      <Item value="PassiveFrequency" priority="1" />
+      <Item value="SoundFrequency" priority="1" />
+      <Item value="SoundSync" priority="0" />
+      <Item value="Invertir" priority="0" />
+      <Item value="Started" priority="2" />
+      <Item value="GetProtocolo`0" priority="13" />
+      <Item value="Protocolos" priority="3" />
+      <Item value="_random" priority="0" />
+      <Item value="RecibeDatos`0" priority="1" />
+      <Item value="CurrentProtocol" priority="4" />
+      <Item value="Random" priority="3" />
+      <Item value="Estado" priority="0" />
+      <Item value="CyclesBetweenPulses" priority="0" />
+      <Item value="_protocolos" priority="0" />
+      <Item value="ResetSignal" priority="0" />
+      <Item value="Equals`0" priority="0" />
+      <Item value="NumberOfProtocols" priority="0" />
+      <Item value="SetProtocolo`0" priority="0" />
+      <Item value="CloseConnection`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.ProtocoloExp1">
+      <Item value="CyclesNextProtocol" priority="2" />
+      <Item value="TimeNextProtocol" priority="1" />
+      <Item value="IndiceProtocolo" priority="5" />
+      <Item value="ActivateSound" priority="1" />
+      <Item value="PassiveFrequency" priority="1" />
+      <Item value="ActiveFrequency" priority="1" />
+      <Item value="SoundFrequency" priority="2" />
+      <Item value="SoundSync" priority="0" />
+      <Item value="ActivateAnimation" priority="1" />
+      <Item value="AnimationBlending" priority="0" />
+      <Item value="Invertir" priority="0" />
+      <Item value="IsActive" priority="2" />
+      <Item value="CiclosEntrePulso" priority="3" />
+      <Item value="PrioridadCiclos" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ItemCollection">
+      <Item value="GetItemAt`0" priority="1" />
+      <Item value="Insert`0" priority="0" />
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TreeView">
+      <Item value="ItemBindingGroup" priority="0" />
+      <Item value="DisplayMemberPath" priority="0" />
+      <Item value="DataContext" priority="0" />
+      <Item value="ItemsSource" priority="1" />
+      <Item value="SelectedItemChanged" priority="1" />
+      <Item value="SelectedItem" priority="4" />
+      <Item value="Items" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TreeViewItem">
+      <Item value="FontWeight" priority="2" />
+      <Item value="Expanded" priority="0" />
+      <Item value="IsExpanded" priority="2" />
+      <Item value="Header" priority="0" />
+      <Item value="Items" priority="0" />
+      <Item value="IsSelectionActive" priority="0" />
+      <Item value="IsEnabled" priority="0" />
+      <Item value="Parent" priority="0" />
+      <Item value="TextTrailingWordEllipsis`0" priority="0" />
+      <Item value="Selected" priority="1" />
+      <Item value="IsSelected" priority="1" />
+      <Item value="Name" priority="0" />
+      <Item value="ItemContainerGenerator" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.windows.XP1">
+      <Item value="tvProtocolos" priority="0" />
+      <Item value="DataContext" priority="0" />
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="GetEnumerator`0" priority="0" />
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TextBlock">
+      <Item value="IsEnabled" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.HierarchicalDataTemplate">
+      <Item value="InkCanvasSelectionEditingEventHandler`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Media.VisualTreeHelper">
+      <Item value="GetChild`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="2" />
+      <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.windows.Composite">
+      <Item value="Name" priority="0" />
+      <Item value="Indice" priority="9" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ItemContainerGenerator">
+      <Item value="ContainerFromIndex`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.IPAddress">
+      <Item value="Any" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.Sockets.AddressFamily">
+      <Item value="InterNetwork" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.Sockets.ProtocolType">
+      <Item value="Udp" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.Sockets.Socket">
+      <Item value="SendTimeout" priority="0" />
+      <Item value="Receive`0" priority="1" />
+      <Item value="ReceiveTimeout" priority="0" />
+      <Item value="Bind`0" priority="0" />
+      <Item value="Listen`0" priority="0" />
+      <Item value="Accept`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.Sockets.UdpClient">
+      <Item value="Connect`0" priority="0" />
+      <Item value="Close`0" priority="4" />
+      <Item value="EndReceive`0" priority="2" />
+      <Item value="Ttl" priority="1" />
+      <Item value="EndSend`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.WrapPanel">
+      <Item value="DataContext" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Label">
+      <Item value="SetBinding`0" priority="0" />
+      <Item value="CoerceValue`0" priority="1" />
+      <Item value="Content" priority="6" />
+      <Item value="Foreground" priority="1" />
+      <Item value="FontFamily" priority="0" />
+      <Item value="FontStyle" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Controls.Label">
+      <Item value="ContentProperty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@WpfApplication1.Experiencias.Experiencia1+Estados">
+      <Item value="Running" priority="2" />
+      <Item value="NotStarted" priority="0" />
+      <Item value="Stopped" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Media.Colors">
+      <Item value="Green" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@WpfApplication1.Experiencias.Experiencia1">
+      <Item value="Estados`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Runtime.Serialization.SerializationInfo">
+      <Item value="AddValue`0" priority="5" />
+      <Item value="GetValue`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.Serializer">
+      <Item value="SerializeObject`0" priority="0" />
+      <Item value="DeSerializeObject`0" priority="0" />
+      <Item value="DeSerializeExp1`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="4" />
+      <Item value="InnerException" priority="2" />
+      <Item value="Source" priority="0" />
+      <Item value="StackTrace" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.Experiencias.UdpState">
+      <Item value="E" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.IPEndPoint">
+      <Item value="Port" priority="2" />
+      <Item value="Address" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Boolean">
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.SocketManager">
+      <Item value="RecibeDatos`0" priority="1" />
+      <Item value="CreateReceivingSocket`0" priority="1" />
+      <Item value="ReceivedBytes" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@WpfApplication1.SocketManager">
+      <Item value="Instance" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.VerticalAlignment">
+      <Item value="Center" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Controls.Grid">
+      <Item value="CommandBindings" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CustomControlLibrary.NumericUpDown">
+      <Item value="Change" priority="1" />
+      <Item value="Maximum" priority="2" />
+      <Item value="DecimalPlaces" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="Value" priority="0" />
+      <Item value="SetBinding`0" priority="1" />
+      <Item value="SourceUpdated" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.UIElementCollection">
+      <Item value="Add`0" priority="2" />
+      <Item value="Remove`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.Experiencias.PuertaExp3">
+      <Item value="EstadoPuerta" priority="6" />
+      <Item value="TamanoPuerta" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.Experiencias.Experiencia3">
+      <Item value="GetPuerta`0" priority="2" />
+      <Item value="Puertas" priority="5" />
+      <Item value="DoorSize" priority="0" />
+      <Item value="TipoCamara" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@WpfApplication1.Experiencias.PuertaExp3+DoorState">
+      <Item value="Abierta" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CustomControlLibrary.NumericUpDown">
+      <Item value="ValueProperty" priority="2" />
+      <Item value="ToolTipProperty" priority="0" />
+      <Item value="ValueStringProperty" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.windows.Xp3">
+      <Item value="UpdateLayout`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@WpfApplication1.Experiencias.PuertaExp3">
+      <Item value="DoorState`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.Experiencias.ProtocoloExp1">
+      <Item value="PostPassiveFrequency" priority="3" />
+      <Item value="SoundSync" priority="2" />
+      <Item value="IndiceProtocolo" priority="2" />
+      <Item value="Invertir" priority="1" />
+      <Item value="IsActive" priority="1" />
+      <Item value="PassiveFrequency" priority="1" />
+      <Item value="PrioridadCiclos" priority="1" />
+      <Item value="SoundFrequency" priority="1" />
+      <Item value="IndiceVisual" priority="0" />
+      <Item value="TimeNextProtocol" priority="1" />
+      <Item value="ActivateAnimation" priority="1" />
+      <Item value="ActivateSound" priority="1" />
+      <Item value="ActiveFrequency" priority="1" />
+      <Item value="AnimationBlending" priority="1" />
+      <Item value="CiclosEntrePulso" priority="1" />
+      <Item value="EnNegro" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Image">
+      <Item value="Height" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Button">
+      <Item value="MinWidth" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Window">
+      <Item value="OnClosed`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Threading.DispatcherTimer">
+      <Item value="Start`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.Experiencias.Exp2.ProtocoloExp2">
+      <Item value="ActiveAnim" priority="9" />
+      <Item value="Invertir" priority="0" />
+      <Item value="TimeNextProtocol" priority="0" />
+      <Item value="CyclesNextProtocol" priority="2" />
+      <Item value="ActiveIllum" priority="7" />
+      <Item value="AutoAnim" priority="6" />
+      <Item value="IsActive" priority="1" />
+      <Item value="Delay" priority="4" />
+      <Item value="EnNegro" priority="3" />
+      <Item value="HandSpeed" priority="4" />
+      <Item value="RepeatTime" priority="4" />
+      <Item value="GetType`0" priority="0" />
+      <Item value="TimeToShowTarget" priority="10" />
+      <Item value="TimeToStartAnimation" priority="7" />
+      <Item value="TimeToEndAnimation" priority="12" />
+      <Item value="ExtraWaitingTime" priority="9" />
+      <Item value="CiclosEntrePulso" priority="5" />
+      <Item value="PrioridadCiclos" priority="4" />
+      <Item value="DistanceBwnTargets" priority="2" />
+      <Item value="_invertir" priority="0" />
+      <Item value="_enNegro" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@WpfApplication1.Experiencias.Exp2.ProtocoloExp2">
+      <Item value="AnimOptions`0" priority="1" />
+      <Item value="IllumOptions`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@WpfApplication1.Experiencias.Exp2.ProtocoloExp2+AnimOptions">
+      <Item value="DerechoRecto" priority="2" />
+      <Item value="IzquierdoRecto" priority="1" />
+      <Item value="DerechoOblicuo" priority="1" />
+      <Item value="IzquierdoOblicuo" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@WpfApplication1.Experiencias.Exp2.ProtocoloExp2+IllumOptions">
+      <Item value="Random" priority="1" />
+      <Item value="RightPanel" priority="1" />
+      <Item value="LeftPanel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.Experiencias.Exp2.Experiencia2">
+      <Item value="Protocolos" priority="1" />
+      <Item value="GetProtocolo`0" priority="4" />
+      <Item value="ResetSignal" priority="0" />
+      <Item value="CloseConnection`0" priority="0" />
+      <Item value="EnviaDatos`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ExperienceMainControls.PerProtocolControls">
+      <Item value="RadioButtonPriorizarCiclos" priority="0" />
+      <Item value="TimeNextProtocol" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ExperienceMainControls.MainControls">
+      <Item value="HorizontalAlignment" priority="0" />
+      <Item value="DefaultFileExtension" priority="0" />
+      <Item value="FileNameLabel" priority="0" />
+      <Item value="LoadFileName" priority="0" />
+      <Item value="SaveFileName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.Experiencias.Exp1.Experiencia1">
+      <Item value="GetProtocolo`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.Experiencias.Exp1.ProtocoloExp1">
+      <Item value="IsActive" priority="0" />
+      <Item value="CiclosEntrePulso" priority="0" />
+      <Item value="CyclesNextProtocol" priority="0" />
+      <Item value="PrioridadCiclos" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ComboBox">
+      <Item value="Items" priority="0" />
+      <Item value="SelectedItem" priority="0" />
+      <Item value="SelectedIndex" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WpfApplication1.windows.NewXP2">
+      <Item value="UpdateLayout`0" priority="0" />
+      <Item value="InvalidateVisual`0" priority="0" />
+      <Item value="InvalidateArrange`0" priority="0" />
+      <Item value="InvalidateProperty`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

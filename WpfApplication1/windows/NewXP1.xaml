@@ -1,0 +1,131 @@
+﻿<Window x:Class="WpfApplication1.windows.NewXP1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:expControl="clr-namespace:ExperienceMainControls;assembly=ExperienceMainControls"
+    xmlns:CustomControlLibrary="clr-namespace:CustomControlLibrary;assembly=CustomControlLibrary"
+    Title="Bienvenido al sistema de gestión de la Experiencia 1" 
+    Height="800" Width="Auto" BorderThickness="0" SizeToContent="WidthAndHeight" 
+    ResizeMode="NoResize" Icon="/Launcher;component/windows/imagenes/Xp1.ico" 
+    WindowStartupLocation="CenterScreen" Padding="5" MaxHeight="Infinity" 
+    HorizontalAlignment="Left" Closing="WindowClosing"
+    >
+    <StackPanel Name="mainPanel">
+        <expControl:MainControls Margin="10" DefaultFileExtension="xp1" HorizontalAlignment="Center" Name="flowControls" RandomCheckBoxActive="{Binding Path=Random, Mode=TwoWay}" ProtocolNumber="{Binding Path=CurrentProtocol, Mode=OneWay}" ProtocolState="{Binding Path=Estado, Mode=OneWay}" StartClick="MainPanelStartClick" StopClick="MainPanelStopClick"  ResetClick="MainPanelResetClick"  CargarClick="MainPanelCargarClick"  GuardarClick="MainPanelGuardarClick" />
+
+        <StackPanel Orientation="Horizontal" Name="xpControlsPanel">
+
+            <GroupBox Header="Configuración del protocolo" Height="Auto" Name="groupBox1" Width="Auto" HorizontalAlignment="Stretch">
+                <StackPanel Name="protocolBodyPanel">
+                    <StackPanel Name="panelProtocolTitle" Orientation="Horizontal" ToolTip="Protocolo seleccionado (para alteración de valores).">
+                        <Label Height="Auto" Name="labelProtocolLabel" Width="Auto" FontWeight="Bold" HorizontalAlignment="Center" >Protocolo:</Label>
+                        <Label Height="Auto" Name="labelProtocolNumber" Width="Auto" FontWeight="Bold" HorizontalAlignment="Center" Content="{Binding Path=IndiceVisual}"></Label>
+                    </StackPanel>
+                    <expControl:PerProtocolControls Name="perProtocolControls" TimeNextProtocol="{Binding Path=TimeNextProtocol, Mode=TwoWay}" IsActive="{Binding Path=IsActive, Mode=TwoWay}" Invertir="{Binding Path=Invertir, Mode=TwoWay}" EnNegro="{Binding Path=EnNegro, Mode=TwoWay}" CyclesToNextProtocol="{Binding Path=CyclesNextProtocol, Mode=TwoWay}" PriorityCycleClick="PerProtocolControlsPriorityCycleClick" PriorityTimeClick="PerProtocolControlsPriorityTimeClick" HorizontalAlignment="Center" />
+                    <Separator Name="protocolSpecificSeparator"></Separator>
+
+                    <!-- CÓDIGO ESPECIFICO A LA EXPERIENCIA -->
+
+                    <StackPanel Name="ProtocolSpecificMainPanel" Orientation="Horizontal">
+                        <StackPanel Height="Auto" Name="SoundPanel" Width="Auto" Orientation="Vertical" VerticalAlignment="Bottom">
+                            <Grid Height="Auto" Name="gridCEP" Width="Auto" Margin="10,10" HorizontalAlignment="Center" ToolTip="Tiempo en segundos para proceder al siguiente protocolo en la secuencia, en caso de hallarse activo el tracking">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Label Name="labelCiclosEntrePulso" Grid.Column="1" VerticalAlignment="Center" Padding="0,5" ToolTip="Tiempo en segundos para proceder al siguiente protocolo en la secuencia, en caso de hallarse activo el tracking.">Ciclos entre cada pulso:</Label>
+                                <Viewbox Grid.Column="2" Margin="10,0,0,0" ToolTip="Número de ciclos de emisión de sonido que deben transcurrir para que se emita un pulso de 5v.">
+                                    <CustomControlLibrary:NumericUpDown x:Name="CyclesBwnPulse" Value="{Binding Path=CiclosEntrePulso, Mode=TwoWay}" Change="1" Maximum="20.0" Minimum="0.0" DecimalPlaces="0" Margin="0" Height="30" />
+                                </Viewbox>
+                            </Grid>
+
+                            <GroupBox Header="Sonido" Height="Auto" Name="gbSonido" Width="Auto" Margin="5,2.5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <StackPanel Height="Auto" Name="spSonido" Width="Auto">
+                                    <CheckBox IsChecked="{Binding Path=ActivateSound}" Height="16" Name="cbActivateSound" Width="Auto" HorizontalAlignment="Left" Margin="10,10,10,5" ToolTip="Activa la reproducción de pulsos sonoros.">Activar sonido</CheckBox>
+                                    <CheckBox IsChecked="{Binding Path=SoundSync}"  Height="16" Margin="30,5" Name="cbSync" Width="Auto" HorizontalAlignment="Left" ToolTip="Sincroniza el sonido con el inicio de la animación de dedeo.">Sincronizar con animación</CheckBox>
+                                    <Grid Height="Auto" Name="grid2" Width="Auto" Margin="30,5,10,10" HorizontalAlignment="Stretch" ToolTip="Determina la velocidad con la que se reproducen las animaciones.">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Name="label3" Grid.Column="1" VerticalAlignment="Center" Padding="0,5" ToolTip="Frecuencia con la que se reproduce el sonido.">Frec. de reproducción:</Label>
+                                        <Viewbox Grid.Column="2" Margin="10,0,0,0" ToolTip="Frecuencia con la que se reproduce el sonido.">
+                                            <CustomControlLibrary:NumericUpDown x:Name="nudSoundFreq" Value="{Binding Path=SoundFrequency, Mode=TwoWay}" Change="0.01" Maximum="1000.0" Minimum="0.1" DecimalPlaces="2" Margin="0" Height="30" />
+                                        </Viewbox>
+                                    </Grid>
+
+                                </StackPanel>
+                            </GroupBox>
+
+                        </StackPanel>
+                        <GroupBox Margin="5,2.5" Header="Animación" Height="Auto" Name="gbAnims" Width="Auto" HorizontalAlignment="Center">
+                            <StackPanel Height="Auto" Name="spAnims" Width="Auto">
+
+
+                                <CheckBox IsChecked="{Binding Path=ActivateAnimation}" Height="16" Name="cbActivateAnims" Width="Auto" HorizontalAlignment="Left" Margin="10,10,10,5" ToolTip="Activa la animación automática del dedo.">Activar animaciones (desactiva el tracking)</CheckBox>
+                                <Grid Height="Auto" Name="grid3" Width="Auto" Margin="10,5,10,2.5" HorizontalAlignment="Stretch" ToolTip="Determina la velocidad con la que se reproducen las animaciones.">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Name="label4" Grid.Column="1" VerticalAlignment="Center" Padding="0,5" ToolTip="Tiempo que pasa hasta que se inicia la animación.">Contacto anterior:</Label>
+                                    <Viewbox Grid.Column="2" Margin="80,0,0,0" ToolTip="Tiempo que pasa hasta que se inicia la animación." VerticalAlignment="Stretch">
+                                        <CustomControlLibrary:NumericUpDown x:Name="nudPassiveFreq" Value="{Binding Path=PassiveFrequency, Mode=TwoWay}" Change="0.01" Maximum="1000.0" Minimum="0.0" DecimalPlaces="3" Margin="0" Height="30" />
+                                    </Viewbox>
+                                </Grid>
+                                <Grid  Height="Auto" Name="grid4" Width="Auto" Margin="10,2.5" HorizontalAlignment="Stretch" ToolTip="Determina la velocidad con la que se reproducen las animaciones.">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Name="label5" Grid.Column="1" VerticalAlignment="Center" Padding="0,5" ToolTip="Determina la velocidad con la que se reproducen las animaciones.">Movimiento:</Label>
+                                    <Viewbox Grid.Column="2" Margin="110,0,0,0" ToolTip="Determina la velocidad con la que se reproducen las animaciones.">
+                                        <CustomControlLibrary:NumericUpDown x:Name="nudActiveFreq" Value="{Binding Path=ActiveFrequency, Mode=TwoWay}" Change="0.01" Maximum="1000.0" Minimum="0.0" DecimalPlaces="3" Margin="0" Height="30" />
+                                    </Viewbox>
+                                </Grid>
+                                <Grid Height="Auto" Name="grid33" Width="Auto" Margin="10,2.5" HorizontalAlignment="Stretch" ToolTip="Determina la velocidad con la que se reproducen las animaciones.">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Name="label64" Grid.Column="1" VerticalAlignment="Center" Padding="0,5" ToolTip="Tiempo que pasa tras la animación.">Contacto posterior:</Label>
+                                    <Viewbox Grid.Column="2" Margin="74,0,0,0" ToolTip="Tiempo que pasa tras la animación." VerticalAlignment="Stretch">
+                                        <CustomControlLibrary:NumericUpDown x:Name="nudPassiveFreqPost" Value="{Binding Path=PostPassiveFrequency, Mode=TwoWay}" Change="0.01" Maximum="1000.0" Minimum="0.0" DecimalPlaces="3" Margin="0" Height="30" />
+                                    </Viewbox>
+                                </Grid>
+                                <StackPanel  Height="Auto" Name="stackPanel3" Width="Auto" Orientation="Horizontal" HorizontalAlignment="Stretch">
+                                    <Label Name="sliderValue" Width="30" Height="25" Content="{Binding ElementName=sliderPercentage,Path=Value}" FlowDirection="RightToLeft" Padding="5,5,5,0" />
+                                    <Label Margin="0,5,5,5" Height="25" Name="labelAnimPerc" Width="Auto" Padding="0,5,5,5">% de animación:</Label>
+                                    <Slider Margin="5,5,5,5"  Value="{Binding Path=AnimationBlending, Mode=TwoWay}" Height="22" Name="sliderPercentage" Width="140" Maximum="100" TickPlacement="TopLeft" SmallChange="1" TickFrequency="1" ToolTip="Cantidad de movimiento del dedo en la animación" LargeChange="10" IsSnapToTickEnabled="True" IsSelectionRangeEnabled="False" Interval="1" />
+                                </StackPanel>
+                            </StackPanel>
+                        </GroupBox>
+                    </StackPanel>
+
+                    <Separator Name="BotonCopyToAllSeparator" Margin="0,10,0,5"></Separator>
+                    <Button Width="Auto" Margin="10" ToolTip="Copia el contenido del protocolo en todos los demás." Click="CopyToAllButtonClick" Name="botonCopytoAll" HorizontalAlignment="Center">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                            <Image Height="15" Source="imagenes\page_copy.png"></Image>
+                            <Label Padding="5,2">Copiar a todos</Label>
+                        </StackPanel>
+                    </Button>
+                    <!-- FIN DEL CÓDIGO ESPECIFICO A LA EXPERIENCIA -->
+
+                
+                
+                </StackPanel>
+            </GroupBox>
+
+          
+            
+            <expControl:TreeViewControl  Name="tvProtocolosControl" Margin="10" HorizontalAlignment="Center" DisableAllClick="UcProtocolListDisableAllClick" EnableAllClick="UcProtocolListEnableAllClick" SelectProtocolClick="UcProtocolListSelectProtocolClick" RefreshClick="UcProtocolListRefreshClick" />
+        </StackPanel>
+
+         <TextBox Visibility="Hidden" Width="Auto" Height="0" Name="dbgBox"></TextBox>
+        <Button Height="23" Name="botonSalir" Width="75" Click="BotonSalirClick" Margin="10">Salir</Button>
+    </StackPanel>
+</Window>
