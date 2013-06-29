@@ -48,14 +48,9 @@ E:\Parkinson\LauncherW\WpfApplication1\WpfApplication1\obj\Release\windows\NewXP
 E:\Parkinson\LauncherW\WpfApplication1\WpfApplication1\obj\Release\windows\NewXP1.g.cs
 E:\Parkinson\LauncherW\WpfApplication1\WpfApplication1\obj\Release\windows\NewXP2.baml
 E:\Parkinson\LauncherW\WpfApplication1\WpfApplication1\obj\Release\windows\NewXP2.g.cs
-C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\Launcher.exe
-C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\Launcher.pdb
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\bin\Release\Launcher.exe
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\bin\Release\Launcher.pdb
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\bin\Release\CustomControlLibrary.dll
-C:\Desarrollo\C\WpfApplication1\WpfApplication1\bin\Release\ExperienceMainControls.pdb
-C:\Desarrollo\C\WpfApplication1\WpfApplication1\bin\Release\XYThreadPool.pdb
-C:\Desarrollo\C\WpfApplication1\WpfApplication1\bin\Release\XYThreadPool.xml
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\ResolveAssemblyReference.cache
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\windows\BaseWindow.baml
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\windows\NewXP1.baml
@@ -78,3 +73,5 @@ C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\Launcher.g.resources
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.Properties.Resources.resources
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\ResGen.read.1.tlog
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\ResGen.write.1.tlog
+C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\Launcher.exe
+C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\Launcher.pdb

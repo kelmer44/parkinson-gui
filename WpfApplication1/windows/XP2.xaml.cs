@@ -179,16 +179,16 @@ namespace WpfApplication1.windows
         {
             _listaData = GetData();
 
-            //dbgBox.Text = "Started: " + _exp2Class.Started
-            //                + " RepeatTime: " + _exp2Class.RepeatTime
-            //                + " Invertir: " + _exp2Class.Invertir
-            //                + " AutoAnim: " + _exp2Class.AutoAnim
-            //                + " \nActiveAnim: " + _exp2Class.ActiveAnim
-            //                + " HandSpeed: " + _exp2Class.HandSpeed
-            //                + " Delay: " + _exp2Class.Delay 
-            //                + " ActiveIllum: " + _exp2Class.ActiveIllum
-            //                + "\n";
-
+;
+            dbgBox.Text = "Started: " + _exp2Class.Started
+                + " Random: " + _exp2Class.Random
+                + " Anim Active: " + _exp2Class.GetProtocolo(0).AutoAnim
+                + " Invertir: " + _exp2Class.GetProtocolo(0).Invertir
+                + " \nCyclesNextProtocol: " + 1 / _exp2Class.GetProtocolo(0).CyclesNextProtocol
+                + " Current Protocol: " + _exp2Class.CurrentProtocol
+                + " Contador: " + DateTime.Now
+                + " En negro: " + _exp2Class.GetProtocolo(0).EnNegro
+                + "\n";
 
             _exp2Class.EnviaDatos();
             _sm.RecibeDatos();
