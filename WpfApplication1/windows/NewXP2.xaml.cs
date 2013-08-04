@@ -20,9 +20,9 @@ namespace WpfApplication1.windows
         private readonly DispatcherTimer _dispatcherTimer = new DispatcherTimer();
         private readonly Serializer _fileSaver = new Serializer();
         private readonly SocketManager _sm;
-        private readonly TreeView _tvProtocolos;
         private Experiencia2 _exp2Class = new Experiencia2(nProtocolos);
         private List<Composite> _listaData;
+        private readonly TreeView _tvProtocolos;
 
 
         public NewXP2()
@@ -55,8 +55,8 @@ namespace WpfApplication1.windows
                 p.DistanceBwnTargets = 50.0f;
             }
 
-            _listaData = GetData();
             _tvProtocolos = tvProtocolosControl.TreeViewProtocolos;
+            _listaData = GetData();
             _tvProtocolos.ItemsSource = _listaData;
 
 
@@ -70,7 +70,7 @@ namespace WpfApplication1.windows
 
 
             _sm = SocketManager.Instance;
-            _sm.CreateReceivingSocket(IPAddress.Any, 5002);
+            _sm.CreateReceivingSocket(IPAddress.Any, 5001);
 
             for (int i = 0; i < nProtocolos; i++)
                 copyFromCombo.Items.Add("Protocolo " + (i + 1));
@@ -221,13 +221,15 @@ namespace WpfApplication1.windows
             byte[] recibidos = _sm.ReceivedBytes;
             if (recibidos != null)
             {
-                float numero = BitConverter.ToSingle(recibidos, 0);
-                float ciclo = BitConverter.ToSingle(recibidos, 1);
+                var numero = BitConverter.ToSingle(recibidos, 0);
+                var ciclo = BitConverter.ToSingle(recibidos, 1);
 
-                _exp2Class.CurrentProtocol = (int) numero;
+                _exp2Class.CurrentProtocol = (int)numero;
+                Console.Write("PNumber: " + _exp2Class.CurrentProtocol);
                 //Numero = (int)numero;
                 //label52.Content = (int)ciclo;
             }
+
 
 
             dbgBox.Text =

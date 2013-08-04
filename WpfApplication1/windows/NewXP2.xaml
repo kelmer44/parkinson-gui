@@ -9,7 +9,8 @@
     WindowStartupLocation="CenterScreen" Padding="5" MaxHeight="Infinity" 
     HorizontalAlignment="Left" Closing="WindowClosing">
     <StackPanel Name="mainPanel">
-        <expControl:MainControls Margin="10" DefaultFileExtension="xp2" HorizontalAlignment="Center" Name="flowControls" RandomCheckBoxActive="{Binding Path=Random, Mode=TwoWay}" ProtocolNumber="{Binding Path=CurrentProtocol, Mode=TwoWay}" ProtocolState="{Binding Path=Estado, Mode=TwoWay}" StartClick="MainPanelStartClick" StopClick="MainPanelStopClick"  ResetClick="MainPanelResetClick"  CargarClick="MainPanelCargarClick"  GuardarClick="MainPanelGuardarClick"/>
+        <expControl:MainControls Margin="10" DefaultFileExtension="xp2" HorizontalAlignment="Center" Name="flowControls" RandomCheckBoxActive="{Binding Path=Random, Mode=TwoWay}" ProtocolNumber="{Binding Path=CurrentProtocol, Mode=TwoWay}" ProtocolState="{Binding Path=Estado, Mode=OneWay}" StartClick="MainPanelStartClick" StopClick="MainPanelStopClick"  ResetClick="MainPanelResetClick"  CargarClick="MainPanelCargarClick"  GuardarClick="MainPanelGuardarClick"/>
+
         <StackPanel Orientation="Horizontal" Name="xpControlsPanel">
 
             <GroupBox Header="Configuración del protocolo" Height="Auto" Name="groupProtocolSpecific" Width="Auto" HorizontalAlignment="Stretch">
