@@ -51,7 +51,6 @@ E:\Parkinson\LauncherW\WpfApplication1\WpfApplication1\obj\Release\windows\NewXP
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\bin\Release\Launcher.exe
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\bin\Release\Launcher.pdb
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\bin\Release\CustomControlLibrary.dll
-C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\ResolveAssemblyReference.cache
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\windows\BaseWindow.baml
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\windows\NewXP1.baml
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\windows\MainMenu.baml
@@ -71,7 +70,7 @@ C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\Launcher_MarkupCompi
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\windows\XP1.baml
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\Launcher.g.resources
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.Properties.Resources.resources
-C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\ResGen.read.1.tlog
-C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\ResGen.write.1.tlog
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\Launcher.exe
 C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\Launcher.pdb
+C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\Launcher.csprojResolveAssemblyReference.cache
+C:\Desarrollo\C\WpfApplication1\WpfApplication1\obj\Release\Launcher.csproj.GenerateResource.Cache

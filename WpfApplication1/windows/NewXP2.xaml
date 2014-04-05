@@ -59,7 +59,7 @@
                                                 <ColumnDefinition Width="Auto" />
                                             </Grid.ColumnDefinitions>
                                             <Label Name="labelTimeToTarget" Grid.Column="1" VerticalAlignment="Center" Padding="0,5" ToolTip="Tiempo de espera para mostrar la diana en pantalla.">Retardo de diana (1):</Label>
-                                            <TextBox Grid.Column="2" Margin="30,0,0,0" ToolTip="Tiempo de espera para mostrar la diana en pantalla." Width="50">
+                                            <TextBox Grid.Column="2" Margin="58,0,0,0" ToolTip="Tiempo de espera para mostrar la diana en pantalla." Width="50">
                                                 <TextBox.Text>
                                                     <Binding Path="TimeToShowTarget"  Mode="TwoWay" ValidatesOnDataErrors="False" ValidatesOnExceptions="False" UpdateSourceTrigger="PropertyChanged">
                                                         <Binding.ValidationRules>
@@ -70,15 +70,33 @@
                                             </TextBox>
                                         
                                     </Grid>
+                                    <CheckBox IsChecked="{Binding Path=ShouldLightenOnTouch}" Height="16" Name="enableIlumOnTocuh" Width="Auto" HorizontalAlignment="Left" Margin="5" ToolTip="Marcar para iluminar la diana al toque ignorando el tiempo inferior.">Iluminar al toque</CheckBox>
+                                    <Grid  Height="Auto" Name="gridIluminaDiana" Width="Auto" Margin="10,10" HorizontalAlignment="Stretch" ToolTip="Tiempo de espera para iluminar la diana en pantalla.">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Name="labelTimeToLighten" Grid.Column="1" VerticalAlignment="Center" Padding="0,5" ToolTip="Tiempo de espera para iluminar la diana en pantalla.">Iluminación de diana (1.5):</Label>
+                                        <TextBox Grid.Column="2" Margin="30,0,0,0" ToolTip="Tiempo de espera para iluminar la diana en pantalla." Width="50">
+                                            <TextBox.Text>
+                                                <Binding Path="TimeToLightenTarget"  Mode="TwoWay" ValidatesOnDataErrors="False" ValidatesOnExceptions="False" UpdateSourceTrigger="PropertyChanged">
+                                                    <Binding.ValidationRules>
+                                                        <ExceptionValidationRule/>
+                                                    </Binding.ValidationRules>
+                                                </Binding>
+                                            </TextBox.Text>
+                                        </TextBox>
 
-                                        <Grid  Height="Auto" Name="grid56" Width="Auto" Margin="10,10" HorizontalAlignment="Stretch" ToolTip="Tiempo total de duración del ciclo (1 + 2 + 3 + X).">
+                                    </Grid>
+                                    <Grid  Height="Auto" Name="grid56" Width="Auto" Margin="10,10" HorizontalAlignment="Stretch" ToolTip="Tiempo total de duración del ciclo (1 + 2 + 3 + X).">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="Auto" />
                                                 <ColumnDefinition Width="Auto" />
                                                 <ColumnDefinition Width="Auto" />
                                             </Grid.ColumnDefinitions>
                                             <Label Name="labelExtraTime" Grid.Column="1" VerticalAlignment="Center" Padding="0,5" ToolTip="Tiempo total de duración del ciclo (1 + 2 + 3 + X).">Duración de ciclo (4):</Label>
-                                            <TextBox Name="CicledurationTB"  Grid.Column="2" Margin="30,0,0,0" ToolTip="Tiempo total de duración del ciclo (1 + 2 + 3 + X)." Width="50" >
+                                            <TextBox Name="CicledurationTB"  Grid.Column="2" Margin="58,0,0,0" ToolTip="Tiempo total de duración del ciclo (1 + 2 + 3 + X)." Width="50" >
                                             <TextBox.Text>
                                                 <Binding Path="ExtraWaitingTime" Mode="TwoWay" ValidatesOnDataErrors="False" ValidatesOnExceptions="False" UpdateSourceTrigger="PropertyChanged">
                                                     <Binding.ValidationRules>

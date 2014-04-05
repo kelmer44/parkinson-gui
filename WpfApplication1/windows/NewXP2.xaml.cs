@@ -53,6 +53,8 @@ namespace WpfApplication1.windows
                 p.ExtraWaitingTime = 3.0f;
 
                 p.DistanceBwnTargets = 50.0f;
+                p.ShouldLightenOnTouch = true;
+                p.TimeToLightenTarget = 1.2f;
             }
 
             _tvProtocolos = tvProtocolosControl.TreeViewProtocolos;
@@ -203,7 +205,24 @@ namespace WpfApplication1.windows
                                                                                              "Distancia entre dianas: {0}",
                                                                                              p.DistanceBwnTargets),
                                                                                      Activo = false
-                                                                                 }
+                                                                                 },
+                                                                                 new Composite
+                                                                                 {
+                                                                                     Name =
+                                                                                         string.Format(
+                                                                                             "Iluminar al toque: {0}",
+                                                                                             p.ShouldLightenOnTouch),
+                                                                                     Activo = false
+                                                                                 },new Composite
+                                                                                 {
+                                                                                     Name =
+                                                                                         string.Format(
+                                                                                             "Tiempo de iluminación: {0}",
+                                                                                             p.TimeToLightenTarget),
+                                                                                     Activo = false
+                                                                                 },
+
+                                                                                 
                                                                          }
                                                       };
 
@@ -224,7 +243,7 @@ namespace WpfApplication1.windows
                 var numero = BitConverter.ToSingle(recibidos, 0);
                 var ciclo = BitConverter.ToSingle(recibidos, 1);
 
-                _exp2Class.CurrentProtocol = (int)numero;
+                _exp2Class.CurrentProtocol = (int)numero+1;
                 Console.Write("PNumber: " + _exp2Class.CurrentProtocol);
                 //Numero = (int)numero;
                 //label52.Content = (int)ciclo;

@@ -45,6 +45,21 @@ namespace WpfApplication1.Experiencias.Exp2
         private float _timeToEndAnimation;
         private float _timeToShowTarget;
         private float _timeToStartAnimation;
+        private bool _shouldLightenOnTouch;
+        private float _timeToLightenTarget;
+
+        public bool ShouldLightenOnTouch
+        {
+            get { return _shouldLightenOnTouch; }
+            set
+            {
+                if (value != _shouldLightenOnTouch)
+                {
+                    _shouldLightenOnTouch = value;
+                    NotifyPropertyChanged("ShouldLightenOnTouch");
+                }
+            }
+        }
 
         public ProtocoloExp2(int idx)
         {
@@ -198,6 +213,11 @@ namespace WpfApplication1.Experiencias.Exp2
          *  TimeToShowTarget
          *  |--------------------------|
          *  
+         * 08/03/2014 ADDED EXTRA TIME
+         * TimeToLightenTarget
+         * |---------------------------|----------|
+         * 
+         * 
          *  TimeToStartAnimation
          *  |--------------------------|------------------------|
          *  
@@ -235,6 +255,20 @@ namespace WpfApplication1.Experiencias.Exp2
                 }
             }
         }
+        
+
+        public float TimeToLightenTarget
+        {
+            get { return _timeToLightenTarget; }
+            set
+            {
+                if (value != _timeToLightenTarget)
+                {
+                    _timeToLightenTarget = value;
+                    NotifyPropertyChanged("TimeToLightenTarget");
+                }
+            }
+        }
 
         public float TimeToEndAnimation
         {
@@ -261,6 +295,9 @@ namespace WpfApplication1.Experiencias.Exp2
                 }
             }
         }
+
+
+
 
         public float DistanceBwnTargets
         {
@@ -299,7 +336,10 @@ namespace WpfApplication1.Experiencias.Exp2
             TimeToEndAnimation = (float) info.GetValue("TimeToEndAnimation", typeof (float));
             ExtraWaitingTime = (float) info.GetValue("ExtraWaitingTime", typeof (float));
 
-            DistanceBwnTargets = (float) info.GetValue("DistanceBwnTargets", typeof (float));
+            DistanceBwnTargets = (float)info.GetValue("DistanceBwnTargets", typeof(float));
+            TimeToLightenTarget = (float)info.GetValue("TimeToLightenTarget", typeof(float));
+
+            ShouldLightenOnTouch = (bool) info.GetValue("ShouldLightenOnTouch", typeof (bool));
         }
 
 
@@ -328,6 +368,9 @@ namespace WpfApplication1.Experiencias.Exp2
             info.AddValue("ExtraWaitingTime", ExtraWaitingTime);
 
             info.AddValue("DistanceBwnTargets", DistanceBwnTargets);
+            info.AddValue("TimeToLightenTarget", TimeToLightenTarget);
+
+            info.AddValue("ShouldLightenOnTouch", ShouldLightenOnTouch);
         }
 
         #endregion
