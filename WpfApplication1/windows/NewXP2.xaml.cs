@@ -48,13 +48,14 @@ namespace WpfApplication1.windows
                 p.CiclosEntrePulso = 0;
 
                 p.TimeToShowTarget = 1.0f;
-                p.TimeToStartAnimation = 1.0f;
-                p.TimeToEndAnimation = 2.0f;
-                p.ExtraWaitingTime = 3.0f;
+                p.TimeToStartAnimation = 1.5f;
+                p.TimeToEndAnimation = 3.0f;
+                p.ExtraWaitingTime = 4.0f;
 
                 p.DistanceBwnTargets = 50.0f;
                 p.ShouldLightenOnTouch = true;
                 p.TimeToLightenTarget = 1.2f;
+                p.TimeToStopLighten = 2.5f;
             }
 
             _tvProtocolos = tvProtocolosControl.TreeViewProtocolos;

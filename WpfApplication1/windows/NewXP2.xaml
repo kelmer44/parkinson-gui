@@ -70,17 +70,35 @@
                                             </TextBox>
                                         
                                     </Grid>
-                                    <CheckBox IsChecked="{Binding Path=ShouldLightenOnTouch}" Height="16" Name="enableIlumOnTocuh" Width="Auto" HorizontalAlignment="Left" Margin="5" ToolTip="Marcar para iluminar la diana al toque ignorando el tiempo inferior.">Iluminar al toque</CheckBox>
-                                    <Grid  Height="Auto" Name="gridIluminaDiana" Width="Auto" Margin="10,10" HorizontalAlignment="Stretch" ToolTip="Tiempo de espera para iluminar la diana en pantalla.">
+                                    <CheckBox IsChecked="{Binding Path=ShouldLightenOnTouch}" Height="16" Name="enableIlumOnTocuh" Width="Auto" HorizontalAlignment="Left" Margin="5" ToolTip="Marcar para iluminar la diana al toque ignorando los tiempos inferiores.">Iluminar al toque</CheckBox>
+                                    <Grid  Height="Auto" Name="gridIluminaDiana" Width="Auto" Margin="10,2" HorizontalAlignment="Stretch" ToolTip="Tiempo de espera para iluminar la diana en pantalla.">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="Auto" />
                                             <ColumnDefinition Width="Auto" />
                                             <ColumnDefinition Width="Auto" />
                                         </Grid.ColumnDefinitions>
-                                        <Label Name="labelTimeToLighten" Grid.Column="1" VerticalAlignment="Center" Padding="0,5" ToolTip="Tiempo de espera para iluminar la diana en pantalla.">Iluminación de diana (1.5):</Label>
+                                        <Label Name="labelTimeToLighten" Grid.Column="1" VerticalAlignment="Center" Padding="0,5" ToolTip="Tiempo de espera para iluminar la diana en pantalla.">Iluminación de diana (1.5.1):</Label>
                                         <TextBox Grid.Column="2" Margin="30,0,0,0" ToolTip="Tiempo de espera para iluminar la diana en pantalla." Width="50">
                                             <TextBox.Text>
                                                 <Binding Path="TimeToLightenTarget"  Mode="TwoWay" ValidatesOnDataErrors="False" ValidatesOnExceptions="False" UpdateSourceTrigger="PropertyChanged">
+                                                    <Binding.ValidationRules>
+                                                        <ExceptionValidationRule/>
+                                                    </Binding.ValidationRules>
+                                                </Binding>
+                                            </TextBox.Text>
+                                        </TextBox>
+
+                                    </Grid>
+                                    <Grid  Height="Auto" Name="gridEndIluminaDiana" Width="Auto" Margin="10,2" HorizontalAlignment="Stretch" ToolTip="Tiempo de espera para dejar de iluminar la diana en pantalla.">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Name="labelTimeToStopLighten" Grid.Column="1" VerticalAlignment="Center" Padding="0,5" ToolTip="Tiempo de espera para dejar de iluminar la diana en pantalla.">Apagado de diana (1.5.2):</Label>
+                                        <TextBox Grid.Column="2" Margin="43,0,0,0" ToolTip="Tiempo de espera para dejar de iluminar la diana en pantalla." Width="50">
+                                            <TextBox.Text>
+                                                <Binding Path="TimeToStopLighten"  Mode="TwoWay" ValidatesOnDataErrors="False" ValidatesOnExceptions="False" UpdateSourceTrigger="PropertyChanged">
                                                     <Binding.ValidationRules>
                                                         <ExceptionValidationRule/>
                                                     </Binding.ValidationRules>

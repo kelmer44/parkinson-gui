@@ -47,6 +47,7 @@ namespace WpfApplication1.Experiencias.Exp2
         private float _timeToStartAnimation;
         private bool _shouldLightenOnTouch;
         private float _timeToLightenTarget;
+        private float _timeToStopLighten;
 
         public bool ShouldLightenOnTouch
         {
@@ -270,6 +271,20 @@ namespace WpfApplication1.Experiencias.Exp2
             }
         }
 
+
+        public float TimeToStopLighten
+        {
+            get { return _timeToStopLighten; }
+            set
+            {
+                if (value != _timeToStopLighten)
+                {
+                    _timeToStopLighten = value;
+                    NotifyPropertyChanged("TimeToStopLighten");
+                }
+            }
+        }
+
         public float TimeToEndAnimation
         {
             get { return _timeToEndAnimation; }
@@ -338,8 +353,10 @@ namespace WpfApplication1.Experiencias.Exp2
 
             DistanceBwnTargets = (float)info.GetValue("DistanceBwnTargets", typeof(float));
             TimeToLightenTarget = (float)info.GetValue("TimeToLightenTarget", typeof(float));
-
+            TimeToStopLighten = (float) info.GetValue("TimeToStopLighten", typeof (float));
             ShouldLightenOnTouch = (bool) info.GetValue("ShouldLightenOnTouch", typeof (bool));
+
+
         }
 
 
@@ -369,6 +386,7 @@ namespace WpfApplication1.Experiencias.Exp2
 
             info.AddValue("DistanceBwnTargets", DistanceBwnTargets);
             info.AddValue("TimeToLightenTarget", TimeToLightenTarget);
+            info.AddValue("TimeToStopLighten", TimeToStopLighten);
 
             info.AddValue("ShouldLightenOnTouch", ShouldLightenOnTouch);
         }

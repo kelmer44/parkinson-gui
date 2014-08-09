@@ -7,7 +7,7 @@ namespace WpfApplication1.Experiencias.Exp2
     [Serializable]
     public class Experiencia2 : Experiencia, ISerializable
     {
-        private const int ValsPerProtocol = 17;
+        private const int ValsPerProtocol = 18;
         private readonly List<ProtocoloExp2> _protocolos;
 
         public Experiencia2(int nProtocolos) : base(4021)
@@ -82,6 +82,8 @@ namespace WpfApplication1.Experiencias.Exp2
             Protocolos[i].TimeToStartAnimation = protocolo.TimeToStartAnimation;
             Protocolos[i].DistanceBwnTargets = protocolo.DistanceBwnTargets;
             Protocolos[i].ShouldLightenOnTouch = protocolo.ShouldLightenOnTouch;
+            Protocolos[i].TimeToStopLighten = protocolo.TimeToStopLighten;
+            Protocolos[i].TimeToLightenTarget = protocolo.TimeToLightenTarget;
         }
 
         protected override void PackData()
@@ -110,6 +112,7 @@ namespace WpfApplication1.Experiencias.Exp2
                 FBuffer[indice + 14] = _protocolos[i].DistanceBwnTargets;
                 FBuffer[indice + 15] = _protocolos[i].ShouldLightenOnTouch ? 1:0;
                 FBuffer[indice + 16] = _protocolos[i].TimeToLightenTarget;
+                FBuffer[indice + 17] = _protocolos[i].TimeToStopLighten;
             }
         }
     }
